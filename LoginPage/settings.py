@@ -55,13 +55,12 @@ MIDDLEWARE = [
 ]
 
 CORS_ALLOWED_ORIGINS = [
-    'http://localhost:8000',
     'https://cdn.jsdelivr.net',
     'https://fonts.gstatic.com',
     'https://fonts.googleapis.com',
     'https://cdnjs.cloudflare.com',
     'https://stackpath.bootstrapcdn.com',
-    'http://127.0.1:8000',
+    'https://hpecty-production.up.railway.app',
 ]
 
 ROOT_URLCONF = "LoginPage.urls"
