@@ -1,0 +1,186 @@
+{% extends 'basic.html' %}
+{% load static %}
+{% block title %}
+Home
+{% endblock %}
+{% block link %}
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="{% static 'css/home.css' %}"/>
+{% endblock %}
+<!--{% block style %}-->
+<!--* {-->
+<!--box-sizing: border-box;-->
+<!--}-->
+
+<!--body {-->
+<!--margin: 0;-->
+<!--padding: 0;-->
+<!--font-family: 'Open Sans', sans-serif;-->
+<!--font-size: 16px;-->
+<!--line-height: 1.5;-->
+<!--color: #333;-->
+<!--}-->
+
+<!--a {-->
+<!--color: #1b9bff;-->
+<!--}-->
+
+<!--/* Header Styles */-->
+<!--header {-->
+<!--background-color: #1b9bff;-->
+<!--padding: 20px;-->
+<!--text-align: center;-->
+<!--color: #fff;-->
+<!--}-->
+
+<!--header h1 {-->
+<!--margin: 0;-->
+<!--font-size: 36px;-->
+<!--font-weight: 700;-->
+<!--text-transform: uppercase;-->
+<!--}-->
+
+<!--/* Main Content Styles */-->
+<!--.container {-->
+<!--max-width: 1200px;-->
+<!--margin: 0 auto;-->
+<!--padding: 40px;-->
+<!--}-->
+
+<!--.hero {-->
+<!--text-align: center;-->
+<!--margin-bottom: 40px;-->
+<!--}-->
+
+<!--.hero img {-->
+<!--width: 100%;-->
+<!--max-width: 800px;-->
+<!--}-->
+
+<!--.heading {-->
+<!--margin: 40px 0;-->
+<!--text-align: center;-->
+<!--}-->
+
+<!--.heading h2 {-->
+<!--font-size: 36px;-->
+<!--font-weight: 700;-->
+<!--text-transform: uppercase;-->
+<!--margin-bottom: 20px;-->
+<!--}-->
+
+<!--.heading p {-->
+<!--font-size: 20px;-->
+<!--font-weight: 300;-->
+<!--margin-bottom: 40px;-->
+<!--font-style:oblique;-->
+
+<!--}-->
+
+<!--.feature {-->
+<!--display: flex;-->
+<!--margin-bottom: 40px;-->
+<!--align-items: center;-->
+<!--}-->
+
+
+<!--.feature-text {-->
+<!--margin-left: 40px;-->
+<!--}-->
+
+<!--.feature-text h3 {-->
+<!--font-size: 24px;-->
+<!--font-weight: 700;-->
+<!--margin-bottom: 20px;-->
+<!--}-->
+
+<!--.feature-text p {-->
+<!--font-size: 18px;-->
+<!--font-weight: 300;-->
+<!--line-height: 1.5;-->
+<!--}-->
+
+<!--/* Footer Styles */-->
+<!--footer {-->
+<!--background-color: #333;-->
+<!--color: #fff;-->
+<!--padding: 20px;-->
+<!--text-align: center;-->
+<!--}-->
+
+<!--footer p {-->
+<!--margin: 0;-->
+<!--font-size: 18px;-->
+<!--font-weight: 300;-->
+<!--}-->
+<!--{% endblock %}-->
+{% block body %}
+{% csrf_token %}
+<main>
+    <div class="container">
+        <div class="heading">
+            <h2>Welcome to the Placement Drive</h2>
+        </div>
+        <div class="hero">
+            <!--            <img src="https://kiit.ac.in/wp-content/uploads/2023/02/Placement-2023.jpg" alt="Hero Image">-->
+            <img src="{% static 'placement23.jpg' %}" alt="Placement Image">
+        </div>
+        <div class="heading">
+            <p>We bring you the best job opportunities and prepare you to excel in your career.</p>
+        </div>
+        <center>
+            <!--            <img src="https://i.ibb.co/6sGJFMz/handshake.jpg" alt="handshake" border="0">-->
+            <img src="{% static 'handshake.jpg' %}" alt="Handshake Image" border="0">
+        </center>
+    </div>
+</main>
+<!-- About Section -->
+<section id="about">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <h2>About Us</h2>
+                <hr>
+                <p>Welcome to the Placement Cell of Vidyavardhaka College of Engineering!!</p>
+                <p>
+
+                    Our team at the Placement Cell is dedicated to bridging the gap between the students and the
+                    industry, and ensuring that our students are placed in reputed organizations across various sectors.
+                    Our aim is to provide students with opportunities that align with their skills and interests, and
+                    help them kick-start their professional careers.</p>
+                <p>
+
+                    We work closely with our corporate partners to understand their recruitment needs and help them
+                    identify the right talent from our pool of students. Our placement process is designed to facilitate
+                    a smooth and seamless transition for both the student and the company.
+
+                    The Placement Cell provides a range of services to students, including resume building, interview
+                    preparation, and networking opportunities with industry professionals. Our team is always available
+                    to provide guidance and support throughout the placement process.</p>
+                <p>
+
+                    Over the years, our college has built a strong reputation for producing competent and highly skilled
+                    graduates, who are sought after by leading companies. We are proud of our students and their
+                    achievements, and we are committed to maintaining our high standards of excellence.</p>
+                <p>
+
+                    Thank you for choosing VVCE College, and we look forward to supporting you in your career
+                    aspirations.</p>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
+{% block script %}
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+        integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+        integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+        crossorigin="anonymous"></script>
+{% endblock %}

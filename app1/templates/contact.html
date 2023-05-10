@@ -1,0 +1,93 @@
+{% extends 'basic.html' %}
+{% load static %}
+{% block title %}
+Contact Us
+{% endblock %}
+{% block link %}
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="{% static 'css/contact.css' %}"/>
+{% endblock %}
+<!--.fa {-->
+<!--padding: 20px;-->
+<!--text-align: center;-->
+<!--margin: 5px 2px;-->
+<!--font-size: 30px;-->
+<!--width: 50px;-->
+<!--}-->
+<!--.fa-facebook {-->
+<!--background: #3b5998;-->
+<!--color: white;-->
+<!--}-->
+<!--.fa-twitter {-->
+<!--background: #55acee;-->
+<!--color: white;-->
+<!--}-->
+
+<!--.fa-linkedin {-->
+<!--background: #007bb5;-->
+<!--color: white;-->
+<!--}-->
+<!--.fa-instagram {-->
+<!--background: #125688;-->
+<!--color: white;-->
+<!--}-->
+<!--.fa-youtube {-->
+<!--background: #bb0000;-->
+<!--color: white;-->
+<!--}-->
+<!--.fa-google {-->
+<!--background: #dd4b39;-->
+<!--color: white;-->
+<!--}-->
+
+<!--header {-->
+<!--background-color: #333;-->
+<!--color: #fff;-->
+<!--padding: 10px;-->
+<!--text-align: center;-->
+<!--border-bottom: 3px solid #444;-->
+<!--margin-bottom: 20px;-->
+<!--}-->
+<!--body {-->
+<!--margin: 0;-->
+<!--padding: 0;-->
+<!--font-family: Arial, sans-serif;-->
+<!--background-color: #f1f1f1;-->
+<!--}-->
+<!--h1 {-->
+<!--font-size: 36px;-->
+<!--margin: 20px;-->
+<!--text-align: center;-->
+<!--}-->
+{% block body %}
+<center>
+    <header>
+        <h1><br/>&emsp;Contact us using any of the below sites</h1>
+    </header>
+    <br/>
+    <br/>
+    <br/>
+    <ul>
+        <a href="https://vvce.ac.in/" class="fa fa-google">Website </a>
+        <a href="https://www.facebook.com/vvceofficial" class="fa fa-facebook">
+            FaceBook</a>
+
+        <a
+                href="https://www.instagram.com/vvceofficial/"
+                class="fa fa-instagram"
+        >Instagram
+        </a>
+        <a href="https://twitter.com/vvceofficial" class="fa fa-twitter">Twitter</a>
+
+        <a
+                href="https://www.linkedin.com/school/vvceofficial/"
+                class="fa fa-linkedin"
+        >Linkedin
+        </a>
+
+        <a href="https://www.youtube.com/vvceofficial" class="fa fa-youtube">Youtube
+        </a>
+    </ul>
+</center>
+{% endblock %}

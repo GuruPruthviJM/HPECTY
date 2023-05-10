@@ -1,0 +1,92 @@
+{% extends 'basic.html' %}
+{% load static %}
+{% block title %}
+Queries
+{% endblock %}
+{% block link %}
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="{% static 'css/query.css' %}"/>
+{% endblock %}
+<!--{% block style %}-->
+<!--@media (max-width: 575.98px) {-->
+<!--.container{-->
+<!--width: 90%;-->
+<!--height: 60%;-->
+<!--margin:auto;-->
+<!--}-->
+
+<!--}-->
+<!--{% endblock %}-->
+{% block body %}
+{% csrf_token %}
+<!--<div class="container p-1 mt-3  align-items-center text-white border border-white rounded "-->
+<!--     style="background-color: rgb(65, 65, 65);width:400px;height: 600px;margin: auto;">-->
+
+<!--    <h1 class="p-1  pt-sm-5 pt-lg-2 text-center">Query</h1>-->
+<!--    {% if msg %}-->
+<!--    <div class="alert alert-success mx-auto w-75" role="alert">-->
+<!--        {{ msg }}-->
+<!--    </div>-->
+<!--    {% endif %}-->
+
+<!--    <form name="query_form" class="p-2 m-2" action="{% url 'submitedQuery' %}" method="POST">-->
+<!--        {% csrf_token %}-->
+<!--        <div class="form-group col mx-auto">-->
+<!--            <label for="Email">Email address</label>-->
+<!--            <input type="email" class="form-control border border-info" name="Email" placeholder="name@example.com">-->
+<!--        </div>-->
+<!--        <div class="form-group col mx-auto">-->
+<!--            <label for="Name">Name</label>-->
+<!--            <input type="text" class="form-control border border-info" name="Name" placeholder="Name">-->
+<!--        </div>-->
+<!--        <div class="form-group col mx-auto">-->
+<!--            <label for="exampleFormControlTextarea1">Enter your query</label>-->
+<!--            <textarea class="form-control border border-info" id="exampleFormControlTextarea1" name="Query"-->
+<!--                      rows="4"></textarea>-->
+<!--        </div>-->
+<!--        <div class="form-group col  mx-auto py-1 text-center">-->
+<!--            <input type="submit" class="form-control border border-info" id="submit" placeholder="Submit">-->
+<!--        </div>-->
+
+<!--    </form>-->
+<!--</div>-->
+<div class="container p-1 mt-3  align-items-center text-white border border-white rounded">
+    <h1 class="p-1  pt-sm-5 pt-lg-2 text-center">Query</h1>
+    {% if msg %}
+    <div class="alert alert-success mx-auto w-75" role="alert">
+        {{ msg }}
+    </div>
+    {% endif %}
+    <form name="query_form" class="p-2 m-2" action="{% url 'submitedQuery' %}" method="POST">
+        {% csrf_token %}
+        <div class="form-group col mx-auto">
+            <label for="Email">Email address</label>
+            <input type="email" class="form-control border border-info" name="Email" placeholder="name@example.com">
+        </div>
+        <div class="form-group col mx-auto">
+            <label for="Name">Name</label>
+            <input type="text" class="form-control border border-info" name="Name" placeholder="Name">
+        </div>
+        <div class="form-group col mx-auto">
+            <label for="exampleFormControlTextarea1">Enter your query</label>
+            <textarea class="form-control border border-info" id="exampleFormControlTextarea1" name="Query"
+                      rows="4"></textarea>
+        </div>
+        <div class="form-group col  mx-auto py-1 text-center">
+            <input type="submit" class="form-control border border-info" id="submit" placeholder="Submit">
+        </div>
+    </form>
+</div>
+{% endblock %}
+{% block script %}
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+{% endblock %}

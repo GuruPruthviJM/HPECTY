@@ -1,0 +1,40 @@
+.container {
+    background-color: rgb(65, 65, 65);
+    width: 400px;
+    height: 600px;
+    margin: auto;
+}
+
+.container h1 {
+    padding: 1px;
+}
+
+.alert {
+    margin: auto;
+    width: 75%;
+}
+
+.form-control {
+    border: 1px solid #17a2b8 !important;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.py-1 {
+    padding-top: 0.25rem !important;
+    padding-bottom: 0.25rem !important;
+}
+
+.text-center {
+    text-align: center !important;
+}
+
+@media (max-width: 575.98px) {
+.container{
+width: 90%;
+height: 60%;
+margin:auto;
+}
+}
